@@ -1,0 +1,26 @@
+<b><h1> Tasks To Be Done </b></h1>
+<p>
+    <b>Title:</b>
+    <%= tesk.title %>
+</p>
+ 
+ <p>
+    <b>description:</b>
+    <%= tesk.description %>
+ </p>
+
+ <p>
+  	<b> completion_date: </b>
+  	<%= tesk.completion_date %>
+ </p>
+  
+   <p>
+  <%= link_to 'Destroy Comment', [tesk.post, tesk],
+               :confirm => 'Are you sure?',
+               :method => :delete %>
+  <%= link_to 'Edit Task', edit_post_tesk_path(tesk) %>
+</p>
+<button type="button" class="btn btn-large btn-success">Finished
+<i class="icon-large icon-thumbs-up"></i> </button>
+<button type="button" class="btn btn-large btn-danger">Unfinished
+<i class="icon-large icon-thumbs-down"></i> </button>
